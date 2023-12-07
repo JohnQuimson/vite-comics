@@ -1,6 +1,5 @@
 body {
   font-family: 'Asap Condensed', sans-serif;
-
   width: 80vw;
   margin: 0 auto;
 }
@@ -26,6 +25,7 @@ header {
     display: flex;
     gap: 20px;
     list-style-type: none;
+    letter-spacing: 0.3px;
 
     span {
       text-transform: uppercase;
@@ -46,10 +46,27 @@ header {
     justify-content: space-between;
     list-style-type: none;
 
-    a {
-      color: #fffdfe;
-      text-decoration: none;
-      text-transform: uppercase;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .cont-shop-icons {
+        height: 60px;
+
+        img {
+          height: 100%;
+          object-fit: contain;
+          aspect-ratio: 1;
+        }
+      }
+
+      a {
+        color: #fffdfe;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
     }
   }
 }
