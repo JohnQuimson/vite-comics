@@ -4,7 +4,7 @@ import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 import SectionShop from './components/SectionShop.vue';
 
-export default{
+export default {
   name: 'App',
   components: {
     AppHeader,
@@ -13,14 +13,15 @@ export default{
     SectionShop,
   },
 };
-
 </script>
 
 <template>
-  <AppHeader />
-  <AppMain />
-  <SectionShop />
-  <AppFooter />
+  <div class="container">
+    <AppHeader />
+    <AppMain />
+    <SectionShop />
+    <AppFooter />
+  </div>
 </template>
 
 <style lang="scss">
