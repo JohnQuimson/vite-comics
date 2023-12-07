@@ -59,7 +59,7 @@ export default{
         </div>
         <ul class="navbar">
             <li v-for="li in menu">
-                {{ li.nome }}
+                <span>{{ li.nome }}</span>
             </li>
         </ul>
     </header> 

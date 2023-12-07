@@ -1,0 +1,31 @@
+body{
+    font-family: 'Asap Condensed', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    border: 1px solid red;
+
+    .cont-logo{
+        height: 80px;
+        width: 80px;
+
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .navbar{
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+
+        span{
+            text-transform: uppercase;
+        }
+    }
+}
