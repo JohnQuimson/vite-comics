@@ -1,31 +1,55 @@
-body{
-    font-family: 'Asap Condensed', sans-serif;
+body {
+  font-family: 'Asap Condensed', sans-serif;
+
+  width: 80vw;
+  margin: 0 auto;
 }
 
-header{
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  border: 1px solid red;
+
+  .cont-logo {
+    height: 80px;
+    width: 80px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .navbar {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 120px;
-    border: 1px solid red;
+    gap: 20px;
+    list-style-type: none;
 
-    .cont-logo{
-        height: 80px;
-        width: 80px;
-
-        img{
-            width: 100%;
-            object-fit: contain;
-        }
+    span {
+      text-transform: uppercase;
     }
+  }
+}
 
-    .navbar{
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
+.shop {
+  border: 1px solid purple;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0282f9;
 
-        span{
-            text-transform: uppercase;
-        }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    a {
+      color: #fffdfe;
+      text-decoration: none;
+      text-transform: uppercase;
     }
+  }
 }

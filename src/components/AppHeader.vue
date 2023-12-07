@@ -3,7 +3,7 @@ export default{
     name: 'Header',
     data(){
         return {
-            menu: [
+            navbarElements: [
                 {
                     nome: 'characters',
                     link: '#',
@@ -58,7 +58,7 @@ export default{
             </div>  
         </div>
         <ul class="navbar">
-            <li v-for="li in menu">
+            <li v-for="li in navbarElements">
                 <span>{{ li.nome }}</span>
             </li>
         </ul>
