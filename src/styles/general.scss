@@ -2,71 +2,87 @@ body {
   font-family: 'Asap Condensed', sans-serif;
   width: 80vw;
   margin: 0 auto;
-}
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 120px;
-  border: 1px solid red;
-
-  .cont-logo {
-    height: 80px;
-    width: 80px;
-
-    img {
-      width: 100%;
-      object-fit: contain;
-    }
-  }
-
-  .navbar {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-    letter-spacing: 0.3px;
-
-    span {
-      text-transform: uppercase;
-    }
-  }
-}
-
-.shop {
-  border: 1px solid purple;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #0282f9;
-
-  ul {
+  header {
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
+    align-items: center;
+    height: 13vh;
+    border: 1px solid red;
 
-    li {
-      display: flex;
-      align-items: center;
-      gap: 20px;
+    .cont-logo {
+      height: 80px;
+      width: 80px;
 
-      .cont-shop-icons {
-        height: 60px;
-
-        img {
-          height: 100%;
-          object-fit: contain;
-          aspect-ratio: 1;
-        }
-      }
-
-      a {
-        color: #fffdfe;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
+      img {
+        width: 100%;
+        object-fit: contain;
       }
     }
+
+    .navbar {
+      display: flex;
+      gap: 20px;
+      list-style-type: none;
+      letter-spacing: 0.3px;
+
+      span {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  main {
+    height: 16vh;
+    background-color: #1c1c1c;
+  }
+
+  .shop {
+    border: 1px solid purple;
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0282f9;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .cont-shop-icons {
+          height: 60px;
+
+          img {
+            height: 100%;
+            object-fit: contain;
+            aspect-ratio: 1;
+          }
+        }
+
+        a {
+          color: #fffdfe;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+
+  .footer-top {
+    height: 42vh;
+    border: 1px solid purple;
+    background-image: url(../../public/img/footer-bg.jpg);
+  }
+
+  footer {
+    height: 12vh;
+    border: 1px solid blue;
   }
 }
