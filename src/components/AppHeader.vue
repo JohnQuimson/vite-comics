@@ -93,6 +93,11 @@ header {
 
     span {
       text-transform: uppercase;
+
+      &:hover {
+        color: #0282f9;
+        cursor: pointer;
+      }
     }
   }
 }
