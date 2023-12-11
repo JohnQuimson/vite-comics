@@ -53,4 +53,42 @@ export default {
   </section>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+.shop {
+  height: 17vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0282f9;
+  padding: 0 200px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .cont-shop-icons {
+        height: 60px;
+
+        img {
+          height: 100%;
+          object-fit: contain;
+          aspect-ratio: 1;
+        }
+      }
+
+      a {
+        color: #fffdfe;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}
+</style>

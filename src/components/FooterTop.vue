@@ -172,4 +172,44 @@ export default {
   </section>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+.footer-top {
+  background-image: url(../../public/img/footer-bg.jpg);
+  height: 42vh;
+  color: #fffdfe;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+
+  .cont-list {
+    display: flex;
+    gap: 30px;
+
+    ul {
+      list-style-type: none;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+
+      li {
+        &:first-child {
+          margin-bottom: 12px;
+        }
+
+        &:first-child a {
+          color: #fffdfe;
+          text-transform: uppercase;
+          font-size: 18px;
+        }
+
+        a {
+          color: #959595;
+          text-decoration: none;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+</style>

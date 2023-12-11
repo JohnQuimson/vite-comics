@@ -67,4 +67,33 @@ export default {
 
 <style scoped lang="scss">
 @use '../assets/scss/main.scss' as *;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+  padding: 0 200px;
+
+  .cont-logo {
+    height: 80px;
+    width: 80px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    letter-spacing: 0.3px;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+}
 </style>

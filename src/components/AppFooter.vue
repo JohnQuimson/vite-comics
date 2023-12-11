@@ -58,4 +58,47 @@ export default {
   </footer>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+footer {
+  height: 12vh;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 200px;
+
+  .footer-sx {
+    button {
+      background-color: #303030;
+      border: 2px solid #0282f9;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+
+  .footer-dx {
+    ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+      gap: 20px;
+
+      a {
+        text-decoration: none;
+      }
+
+      span {
+        text-transform: uppercase;
+        color: #0282f9;
+        font-weight: 600;
+      }
+
+      img {
+        height: 30px;
+      }
+    }
+  }
+}
+</style>

@@ -24,5 +24,4 @@ export default {
 
 <style lang="scss">
 @use './assets/scss/main.scss' as *;
-// @use './styles/common' as *;
 </style>
