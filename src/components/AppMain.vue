@@ -24,6 +24,5 @@ main {
   color: white;
   display: flex;
   flex-direction: column;
-  height: 700px;
 }
 </style>
