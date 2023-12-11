@@ -95,6 +95,7 @@ export default {
 <template>
   <section>
     <div class="cont-films">
+      <h3>Current Series</h3>
       <div class="films">
         <div class="film" v-for="(film, index) in films">
           <div class="cont-img">
@@ -103,35 +104,64 @@ export default {
           <span>{{ film.series }}</span>
         </div>
       </div>
+      <button>Load More</button>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
-.films {
+.cont-films {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 200px 100px;
+  flex-direction: column;
+  align-items: center;
 
-  .film {
-    width: calc(100% / 6);
-    overflow: hidden;
+  h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #0282f9;
+    position: absolute;
+    top: -20px;
+    left: 200px;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+  .films {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 200px 50px;
 
-    .cont-img {
-      height: 200px;
-      width: 200px;
+    .film {
+      width: calc(100% / 6);
       overflow: hidden;
-      margin: 50px 0 20px;
 
-      img {
-        width: 100%;
-        object-fit: contain;
+      .cont-img {
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+        margin: 50px 0 20px;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      span {
+        text-transform: uppercase;
       }
     }
+  }
 
-    span {
-      text-transform: uppercase;
-    }
+  button {
+    background-color: #0282f9;
+    color: white;
+    padding: 15px 50px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
   }
 }
 </style>
