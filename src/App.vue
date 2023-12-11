@@ -23,6 +23,6 @@ export default {
 </template>
 
 <style lang="scss">
-@use './styles/general' as *;
-@use './styles/common' as *;
+@use './assets/scss/main.scss' as *;
+// @use './styles/common' as *;
 </style>
